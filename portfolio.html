@@ -19,23 +19,46 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="menu">
-          <a href="index.html" class="logo"><span class="colorweb">Web</span>studio</a>
-          <ul class="nav-list">
+        <nav class="header__menu">
+          <a href="index.html" class="header__menu-logo"
+            ><span class="header__menu-logo--color">Web</span>Studio</a
+          >
+
+          <ul class="header__menu-list">
             <li>
-              <a href="index.html" class="link-default agency">Agencja</a>
+              <a href="index.html" class="header__menu-list--disable header__menu-list-agency"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="link-portfolio decor portfolio">Portfolio</a>
+              <a
+                href="./portfolio.html"
+                class="header__menu-list--enable header__menu-list-portfolio header__menu-list--active-second"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="index.html" class="link-default contact">Kontakt</a>
+              <a href="index.html" class="header__menu-list--disable header__menu-list-contact"
+                >Kontakt</a
+              >
+            </li>
+            <li class="header__menu-list-email">
+              <a href="mailto:nfo@devstudio.com" class="header__menu-list-email--color">
+                <svg class="icon-header-spacing" height="12px" ; width="16px">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__menu-list-phone">
+              <a href="tel:+48111111111" class="header__menu-list-phone--color"
+                ><svg class="icon-header-spacing" height="16px" ; width="10px">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              >
             </li>
           </ul>
-          <div class="menu">
-            <a href="mailto:nfo@devstudio.com" class="link-2 email">info@devstudio.com</a>
-            <a href="tel:+48111111111" class="link-2 tel">+48 111 111 111</a>
-          </div>
         </nav>
       </div>
     </header>
@@ -188,19 +211,86 @@
     </section>
     <footer class="section-footer">
       <div class="container">
-        <ul class="position-ul-footer">
+        <ul class="location-social-footer">
           <li>
-            <a href="index.html" class="logo-footer"><span class="colorweb">Web</span>studio </a>
+            <ul class="position-ul-footer">
+              <li>
+                <a href="index.html" class="logo-footer"
+                  ><span class="colorweb">Web</span>Studio
+                </a>
+              </li>
+              <li class="address-position">
+                <address class="italics">m. Warszawa, Aleje Jerozolimskie 21</address>
+              </li>
+              <li class="address-email">
+                <a href="mailto:nfo@devstudio.com" class="header__menu-list-phone--color"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-email">
+                <a href="tel:+48111111111" class="header__menu-list-phone--color"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
           </li>
-          <li class="address-position">
-            <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+
+          <li class="location-join-us">
+            <ul>
+              <li><p class="join-us">DOŁĄCZ DO NAS</p></li>
+              <svg class="box-social background-social-none-left">
+                <use
+                  href="./images/icons.svg#icon-insta"
+                  height="20px"
+                  ;
+                  width="20px"
+                  x="12"
+                  y="12"
+                ></use>
+              </svg>
+
+              <svg class="box-social background-social-icon">
+                <use
+                  href="./images/icons.svg#icon-tweet"
+                  height="20px"
+                  ;
+                  width="20px"
+                  x="12"
+                  y="12"
+                ></use>
+              </svg>
+
+              <svg class="box-social background-social-icon">
+                <use
+                  href="./images/icons.svg#icon-face"
+                  height="20px"
+                  ;
+                  width="20px"
+                  x="12"
+                  y="12"
+                ></use>
+              </svg>
+
+              <svg class="box-social background-social-icon">
+                <use
+                  href="./images/icons.svg#icon-linke"
+                  height="20px"
+                  ;
+                  width="20px"
+                  x="12"
+                  y="12"
+                ></use>
+              </svg>
+            </ul>
           </li>
-          <li class="address-email">
-            <a href="mailto:nfo@devstudio.com" class="nodecor link-2">info@devstudio.com</a>
+
+          <li class="location-join-us">
+            <ul>
+              <li><p class="newslatter-style">ZAPISZ SIE DO NEWSLETTERA</p></li>
+              <input placeholder="E-mail" class="newslatter" type="email" name="mail" />
+            </ul>
           </li>
-          <li class="address-email">
-            <a href="tel:+48111111111" class="nodecor link-2">+48 111 111 111</a>
-          </li>
+          <li><button type="button" class="button-save">Zapisz się</button></li>
         </ul>
       </div>
     </footer>

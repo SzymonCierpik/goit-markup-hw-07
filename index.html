@@ -19,29 +19,41 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="menu">
-          <a href="index.html" class="logo"><span class="colorweb">Web</span>studio</a>
+        <nav class="header__menu">
+          <a href="index.html" class="header__menu-logo"
+            ><span class="header__menu-logo--color">Web</span>Studio</a
+          >
 
-          <ul class="nav-list">
+          <ul class="header__menu-list">
             <li>
-              <a href="index.html" class="link-agency decor agency">Agencja</a>
+              <a
+                href="index.html"
+                class="header__menu-list--enable header__menu-list-agency header__menu-list--active-first"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="link-default portfolio">Portfolio</a>
+              <a
+                href="./portfolio.html"
+                class="header__menu-list--disable header__menu-list-portfolio"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="index.html" class="link-default contact">Kontakt</a>
+              <a href="index.html" class="header__menu-list--disable header__menu-list-contact"
+                >Kontakt</a
+              >
             </li>
-            <li class="icon-header email">
-              <a href="mailto:nfo@devstudio.com" class="link-2 fill">
+            <li class="header__menu-list-email">
+              <a href="mailto:nfo@devstudio.com" class="header__menu-list-email--color">
                 <svg class="icon-header-spacing" height="12px" ; width="16px">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+48111111111" class="link-2 tel fill"
+            <li class="header__menu-list-phone">
+              <a href="tel:+48111111111" class="header__menu-list-phone--color"
                 ><svg class="icon-header-spacing" height="16px" ; width="10px">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -52,32 +64,36 @@
         </nav>
       </div>
     </header>
+
     <main>
-      <div class="gray-box container foto-graybox">
-        <h1 class="container2">EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU<br /></h1>
-        <div class="position-button">
-          <button type="button" class="button" data-modal-open>Zamów usługę</button>
+      <div class="wallpaper container">
+        <h1 class="wallpaper__heading">EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU<br /></h1>
+        <div class="wallpaper__button">
+          <button type="button" class="wallpaper__button-specification" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </div>
-      <section id="lorem-ipsum" class="four-boxes">
+
+      <section id="lorem-ipsum" class="boxes">
         <div class="container">
-          <ul class="location-lorem-ipsum">
-            <li class="margin-lorem-ipsum">
+          <ul class="boxes__items">
+            <li class="boxes__items--position">
               <svg class="" height="120px" ; width="270px">
                 <use href="./images/icons.svg#icon-group-1"></use>
               </svg>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <svg class="" height="120px" ; width="270px">
                 <use href="./images/icons.svg#icon-group-2"></use>
               </svg>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <svg class="" height="120px" ; width="270px">
                 <use href="./images/icons.svg#icon-group-3"></use>
               </svg>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <svg class="" height="120px" ; width="270px">
                 <use href="./images/icons.svg#icon-group-4"></use>
               </svg>
@@ -85,31 +101,31 @@
           </ul>
         </div>
       </section>
-      <section id="lorem-ipsum" class="our-boxes-lorem-ipsum">
+      <section id="lorem-ipsum" class="boxes">
         <div class="container">
-          <ul class="location-lorem-ipsum">
-            <li class="margin-lorem-ipsum">
+          <ul class="boxes__items">
+            <li class="boxes__items--position">
               <p class="lorem-ipsum">LOREM IPSUM</p>
               <p class="position-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <p class="lorem-ipsum">LOREM IPSUM</p>
               <p class="position-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <p class="lorem-ipsum">LOREM IPSUM</p>
               <p class="position-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <p class="lorem-ipsum">LOREM IPSUM</p>
               <p class="position-lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -123,15 +139,15 @@
         <div class="container">
           <h3 class="position-h3">Czym się zajmujemy</h3>
           <ul class="location-what-we-do">
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <img src="images/img2.jpg" width="370" height="294" alt="computer" />
               <figcaption class="label">aplikacje komputerowe</figcaption>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <img src="images/img1.jpg" width="370" height="294" alt="phone" />
               <figcaption class="label">aplikacje mobilne</figcaption>
             </li>
-            <li class="margin-lorem-ipsum">
+            <li class="boxes__items--position">
               <img src="images/img3.jpg" width="370" height="294" alt="tablet" />
               <figcaption class="label">rozwiązania graficzne</figcaption>
             </li>
@@ -357,7 +373,7 @@
       <section>
         <div class="container section">
           <h3>Nasi klienci</h3>
-          <div class="icon-header">
+          <div class="icon-header-client">
             <div class="fill border-box">
               <svg height="92px" ; width="170px">
                 <use href="./images/icons.svg#icon-client-1"></use>
@@ -389,17 +405,21 @@
             <ul class="position-ul-footer">
               <li>
                 <a href="index.html" class="logo-footer"
-                  ><span class="colorweb">Web</span>studio
+                  ><span class="colorweb">Web</span>Studio
                 </a>
               </li>
               <li class="address-position">
                 <address class="italics">m. Warszawa, Aleje Jerozolimskie 21</address>
               </li>
               <li class="address-email">
-                <a href="mailto:nfo@devstudio.com" class="nodecor link-2">info@devstudio.com</a>
+                <a href="mailto:nfo@devstudio.com" class="header__menu-list-phone--color"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address-email">
-                <a href="tel:+48111111111" class="nodecor link-2">+48 111 111 111</a>
+                <a href="tel:+48111111111" class="header__menu-list-phone--color"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
           </li>
@@ -477,16 +497,19 @@
           <label
             >Imię<input class="border-style" type="text" name="username" />
             <svg class="position-svg">
-              <use href="./images/icons.svg#icon-person" height="18px" width="18px"></use></svg
-          ></label>
+              <use href="./images/icons.svg#icon-person" height="18px" width="18px"></use>
+            </svg>
+          </label>
           <label
             >Telefon<input class="border-style" type="tel" name="phone" /><svg class="position-svg">
-              <use href="./images/icons.svg#icon-phone-black" height="18px" width="18px"></use></svg
-          ></label>
+              <use href="./images/icons.svg#icon-phone-black" height="18px" width="18px"></use>
+            </svg>
+          </label>
           <label
             >Email<input class="border-style" type="email" name="mail" /><svg class="position-svg">
-              <use href="./images/icons.svg#icon-email-black" height="18px" width="18px"></use></svg
-          ></label>
+              <use href="./images/icons.svg#icon-email-black" height="18px" width="18px"></use>
+            </svg>
+          </label>
           <label
             >Komentarz<textarea
               class="size-comment border-style"

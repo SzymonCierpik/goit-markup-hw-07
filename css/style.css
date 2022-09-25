@@ -11,6 +11,7 @@
   --border: #eeeeee;
   --border-header: #ececec;
   --social: #afb1b8;
+  --gray-special: #afb1b8;
 }
 
 /* general variables used throughout the website design */
@@ -163,6 +164,10 @@ p[class='text-picture'] {
 .header__menu-list-phone {
   padding-left: 50px;
   fill: var(--grayhey);
+}
+
+.header__menu-list--spacing {
+  margin-right: 10px;
 }
 
 .header__menu-list-email--color,
@@ -365,7 +370,7 @@ The pictures are accompanied by descriptions. */
   border-radius: 4px;
   margin-left: 15px;
   margin-right: 15px;
-  fill: var(--grayhey);
+  fill: var(--gray-special);
 }
 
 .customers__box:hover,
@@ -642,9 +647,88 @@ The pictures are accompanied by descriptions. */
   margin-right: 164px;
 }
 
+textarea {
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid var(--blackho);
+}
+
+.modal-window__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.newslatter__label::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+form {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+input {
+  position: relative;
+  width: 406px;
+  height: 40px;
+  border-radius: 4px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid var(--blackho);
+  padding-left: 42px;
+}
+
+input:focus,
+textarea:focus {
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  border-color: var(--kamikaze);
+}
+
+label:focus-within svg {
+  fill: var(--kamikaze);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal-window__checkbox--position::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 1px;
+  background-color: var(--whitehihi);
+}
+
+input:checked::before {
+  background-color: var(--kamikaze);
+  border: 1px solid var(--kamikaze);
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
 /* PAGE PORTFOLIO */
 
-.buttonportfolio {
+.five-buttons {
+  margin-left: 295px;
+  margin-right: 318px;
+  margin-bottom: 41px;
+}
+
+.five-buttons-details {
   padding: 6px 22px;
   margin-left: 4px;
   background: var(--buttonwhite);
@@ -659,18 +743,38 @@ The pictures are accompanied by descriptions. */
   border: none;
 }
 
-.buttonportfolio-set {
-  margin-left: 295px;
-  margin-right: 318px;
-  margin-bottom: 41px;
-}
-.buttonportfolio:hover {
+.five-buttons-details:hover {
   background-color: var(--kamikaze);
   color: var(--buttonwhite);
   transition: 0.5s;
 }
 
-.font2 {
+.card-portfolio {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.card-portfolio--position-left {
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+}
+
+.card-portfolio--position-right {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+}
+
+.card-portfolio--position-center {
+  margin: 15px;
+  border: 1px solid var(--border);
+}
+
+.card-portfolio__tilte {
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
@@ -682,64 +786,41 @@ The pictures are accompanied by descriptions. */
   margin-bottom: 20px;
 }
 
-.no-activ {
-  color: var(--blackho);
+.card-portfolio__description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--blackhawk);
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-right: 24px;
 }
 
-.card-portfolio {
-  display: flex;
-  list-style: none;
-  justify-content: center;
+.overlay {
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  background: rgba(33, 150, 243, 0.9);
 }
 
-.item-portfolio-left {
-  margin-right: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 1px solid var(--border);
+.overlay p {
+  color: var(--whitehihi);
+  padding-left: 24px;
+  padding-top: 49px;
+  padding-right: 46px;
+  padding-bottom: 49px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
-.item-portfolio-right {
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 1px solid var(--border);
-}
-
-.item-portfolio-center {
-  margin: 15px;
-  border: 1px solid var(--border);
-}
-
-.icon-header-spacing {
-  margin-right: 10px;
-}
-
-.four-boxes-lorem-ipsum {
-  padding-top: 30px;
-}
-
-.social {
-  margin-top: 16px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.thumb-hat-we-do {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.box-label {
-  position: absolute;
-  height: 70px;
-  width: 370px;
-  margin-top: 224px;
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.box {
+.card-portfolio__box {
   background-size: contain;
   width: 370px;
   height: 294px;
@@ -784,126 +865,14 @@ The pictures are accompanied by descriptions. */
   background-image: url('../images/portfolio_img8.jpg');
 }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  transform: translatey(100%);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  background: rgba(33, 150, 243, 0.9);
-}
-
-.overlay p {
-  color: var(--whitehihi);
-  padding-left: 24px;
-  padding-top: 49px;
-  padding-right: 46px;
-  padding-bottom: 49px;
-  font-family: 'Roboto';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
-.item-portfolio-center:hover,
-.item-portfolio-left:hover,
-.item-portfolio-right:hover {
+.card-portfolio--position-left:hover,
+.card-portfolio--position-right:hover,
+.card-portfolio--position-center:hover {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.box:hover .overlay {
+.card-portfolio__box:hover .overlay {
   transform: translate(0);
-}
-
-textarea {
-  resize: none;
-  border-radius: 4px;
-  border: 1px solid var(--blackho);
-}
-
-.size-comment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.newslatter::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-form {
-  position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-label {
-  position: relative;
-  display: block;
-  padding-top: 10px;
-  font-family: 'Roboto';
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
-
-input {
-  position: relative;
-  width: 406px;
-  height: 40px;
-  border-radius: 4px;
-  background: none;
-  border-radius: 4px;
-  border: 1px solid var(--blackho);
-  padding-left: 42px;
-}
-
-input:focus,
-textarea:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  border-color: var(--kamikaze);
-}
-
-label:focus-within svg {
-  fill: var(--kamikaze);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.check-box::before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 15px;
-  height: 15px;
-  border: 1px solid black;
-  border-radius: 1px;
-  background-color: var(--whitehihi);
-}
-
-input:checked::before {
-  background-color: var(--kamikaze);
-  border: 1px solid var(--kamikaze);
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
-}
-
-.link-2:hover {
-  color: var(--kamikaze);
-  transition: 0.5s;
-}
-
-.text-picture {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--blackhawk);
-  margin-left: 24px;
-  margin-top: 20px;
-  margin-right: 24px;
 }

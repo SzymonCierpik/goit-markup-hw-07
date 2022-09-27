@@ -10,14 +10,16 @@
   --whatitis: #f5f4fa;
   --border: #eeeeee;
   --border-header: #ececec;
-  --social: #afb1b8;
   --gray-special: #afb1b8;
+  --animation-primary: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  --shadow-one: rgba(0, 0, 0, 0.15);
+  --background-joinus:rgba(255, 255, 255, 0.1);
 }
 
 /* general variables used throughout the website design */
 
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', 'Raleway', "Sans-serif";
   color: var(--grayhey);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -35,6 +37,11 @@ body {
 
 .section {
   padding: 94px 0;
+}
+
+.position-boxes {
+  margin: 15px;
+  position: relative;
 }
 
 h1 {
@@ -58,15 +65,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-p[class='text-picture'] {
-  font-family: 'Roboto';
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  text-align: left;
 }
 
 /* PAGE AGENCY */
@@ -227,7 +225,7 @@ p[class='text-picture'] {
   text-align: center;
   border: none;
   background: var(--kamikaze);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--shadow-one);
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -245,11 +243,6 @@ The pictures are accompanied by descriptions. */
 .boxes__items {
   display: flex;
   list-style: none;
-}
-
-.boxes__items--position {
-  margin: 15px;
-  position: relative;
 }
 
 .signature {
@@ -274,11 +267,6 @@ The pictures are accompanied by descriptions. */
   display: flex;
   list-style: none;
   background-color: var(--whitehihi);
-}
-
-.what-we-do--position-box {
-  margin: 15px;
-  position: relative;
 }
 
 .what-we-do__signature {
@@ -345,7 +333,7 @@ The pictures are accompanied by descriptions. */
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--social);
+  fill: var(--gray-special);
 }
 
 .box-social--circle:hover {
@@ -366,7 +354,7 @@ The pictures are accompanied by descriptions. */
 .customers__box {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--social);
+  border: 1px solid var(--gray-special);
   border-radius: 4px;
   margin-left: 15px;
   margin-right: 15px;
@@ -448,13 +436,13 @@ The pictures are accompanied by descriptions. */
 }
 
 .joinus__icon {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--background-joinus);
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .joinus__icon--margin-left {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--background-joinus);
   margin-right: 5px;
 }
 
@@ -467,7 +455,7 @@ The pictures are accompanied by descriptions. */
 
 .newslatter__label {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px var(--shadow-one));
   border-radius: 4px;
   width: 358px;
   height: 50px;
@@ -491,7 +479,7 @@ The pictures are accompanied by descriptions. */
 
 .newslatter__button {
   background: var(--kamikaze);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--shadow-one);
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -570,7 +558,7 @@ The pictures are accompanied by descriptions. */
   text-align: center;
   padding-top: 35px;
   padding-bottom: 2px;
-  color: #212121;
+  color:var(--blackho);
 }
 
 .modal-window__label {
@@ -614,7 +602,7 @@ The pictures are accompanied by descriptions. */
   height: 15px;
   width: 16px;
   border-radius: 1px;
-  border-color: #000000;
+  border-color:var(--blackhawk);
   margin-top: 3px;
   margin-left: -24px;
 }
@@ -629,7 +617,7 @@ The pictures are accompanied by descriptions. */
 .modal-window__button-send {
   width: 200px;
   height: 50px;
-  color: #ffffff;
+  color:var(--whitehihi);
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
@@ -637,7 +625,7 @@ The pictures are accompanied by descriptions. */
   letter-spacing: 0.06em;
   text-align: center;
   background: var(--kamikaze);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--shadow-one);
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -691,13 +679,13 @@ input {
 
 input:focus,
 textarea:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--animation-primary);
   border-color: var(--kamikaze);
 }
 
 label:focus-within svg {
   fill: var(--kamikaze);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--animation-primary);
 }
 
 .modal-window__checkbox--position::before {
@@ -796,13 +784,19 @@ input:checked::before {
   margin-left: 24px;
   margin-top: 20px;
   margin-right: 24px;
+    font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
   transform: translatey(100%);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--animation-primary);
   background: rgba(33, 150, 243, 0.9);
 }
 
@@ -868,7 +862,7 @@ input:checked::before {
 .card-portfolio--position-left:hover,
 .card-portfolio--position-right:hover,
 .card-portfolio--position-center:hover {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

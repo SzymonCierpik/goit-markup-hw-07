@@ -57,7 +57,7 @@
 }
 
 .header__menu-list--disable {
-  color: var(--blackhaw);
+  color: var(--blackhawk);
   font-weight: 500;
 }
 
@@ -71,9 +71,7 @@
 }
 
 .header__menu-list-email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   padding-left: 345px;
   fill: var(--grayhey);
 }
@@ -84,7 +82,7 @@
 }
 
 .header__menu-list--spacing {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header__menu-list-email--color,
@@ -109,4 +107,14 @@
   color: var(--kamikaze);
   fill: var(--kamikaze);
   transition: 0.5s;
+}
+
+.header__menu-list-phone--position {
+  position: relative;
+  bottom: 2px;
+}
+
+.header__menu-list-email--position {
+  position: relative;
+  bottom: 1px;
 }

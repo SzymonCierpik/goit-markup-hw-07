@@ -17,31 +17,36 @@
     <!--  -->
     <!-- H E A D E R -->
     <!--  -->
-    <header class="border-bottom">
-      <div class="container flex">
-        <div class="header--center">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__menu">
           <a href="index.html" class="logo"><span class="logo--color">Web</span>Studio</a>
-          <nav class="header--center">
-            <ul class="menu">
+
+          <nav class="header__menu">
+            <ul class="header__menu__container">
               <li>
-                <a href="index.html" class="menu__item">Agencja </a>
+                <a href="index.html" class="header__menu__item">Agencja </a>
               </li>
               <li>
                 <a
                   href="portfolio.html"
-                  class="menu__item menu__item--active blue-line-portfolio"
+                  class="header__menu__item header__menu__item--active header__menu__item--blue-bottom-portfolio"
                   >Portfolio</a
                 >
               </li>
-              <li><a href="/" class="menu__item">Kontakt</a></li>
+              <li><a href="/" class="header__menu__item">Kontakt</a></li>
             </ul>
           </nav>
         </div>
-        <div>
-          <ul class="menu flex menu--gap">
+
+        <nav class="header__menu">
+          <ul class="header__menu__container header__menu__container--gap">
             <li>
-              <a href="mailto:info@devstudio.com" class="menu__contact menu--color">
-                <svg class="svg">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__menu__contact header__menu__contact--color"
+              >
+                <svg class="header__menu__contact__icon-email">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 <span>info@devstudio.com</span>
@@ -50,18 +55,19 @@
             <li>
               <a
                 href="tel:+48111111111"
-                class="menu__contact menu__contact--padding-tel menu--color"
+                class="header__menu__contact header__menu__contact--color header__menu__contact--padding"
               >
-                <svg class="svg2">
+                <svg class="header__menu__contact__icon-phone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 <span>+48 111 111 111</span>
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
+
     <main>
       <!--  -->
       <!-- B U T T O N S  -->

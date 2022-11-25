@@ -30,7 +30,7 @@
               <li>
                 <a
                   href="portfolio.html"
-                  class="header__menu__item header__menu__item--active header__menu__item--blue-bottom-portfolio"
+                  class="header__menu__item header__menu__item--active header__menu__item--blue-bottom-agency"
                   >Portfolio</a
                 >
               </li>
@@ -223,28 +223,31 @@
     <!-- F O O T E R  -->
     <!--  -->
     <footer>
-      <div class="footer--background">
+      <div class="footer__container">
         <div class="container">
-          <div class="footer-flex">
+          <div class="footer__section">
             <div>
               <div>
-                <a href="index.html" class="logo logo--flex">
+                <a href="index.html" class="logo logo--position-footer">
                   <span class="logo--color">Web</span>
                   <span class="logo--color-footer">Studio</span>
                 </a>
               </div>
               <address>
                 <ul class="address">
-                  <li class="address__item address__item--color">
+                  <li class="address__item address__item--primary-color">
                     m. Warszawa, Aleje Jerozolimskie 21
                   </li>
                   <li class="address__item">
-                    <a href="mailto:nfo@devstudio.com" class="address__item--contact">
+                    <a
+                      href="mailto:nfo@devstudio.com"
+                      class="address__item--secondary-color"
+                    >
                       info@devstudio.com
                     </a>
                   </li>
                   <li class="address__item">
-                    <a href="tel:+48111111111" class="address__item--contact"
+                    <a href="tel:+48111111111" class="address__item--secondary-color"
                       >+48 111 111 111
                     </a>
                   </li>
@@ -252,30 +255,30 @@
               </address>
             </div>
 
-            <div class="join-us-margin">
+            <div class="footer__section__column">
               <div>
-                <span class="join-us">DOŁĄCZ DO NAS</span>
-                <div class="social-icon--footer">
-                  <div class="social-icon--circle--footer">
-                    <svg class="size-social-icon">
+                <span class="heading__footer">DOŁĄCZ DO NAS</span>
+                <div class="social-icon-group-footer">
+                  <div class="social-icon-group-footer--circle">
+                    <svg class="social-icons-section__unit__icon">
                       <use href="./images/icons.svg#icon-insta"></use>
                     </svg>
                   </div>
 
-                  <div class="social-icon--circle--footer">
-                    <svg class="size-social-icon">
+                  <div class="social-icon-group-footer--circle">
+                    <svg class="social-icons-section__unit__icon">
                       <use href="./images/icons.svg#icon-tweet"></use>
                     </svg>
                   </div>
 
-                  <div class="social-icon--circle--footer">
-                    <svg class="size-social-icon">
+                  <div class="social-icon-group-footer--circle">
+                    <svg class="social-icons-section__unit__icon">
                       <use href="./images/icons.svg#icon-face"></use>
                     </svg>
                   </div>
 
-                  <div class="social-icon--circle--footer">
-                    <svg class="size-social-icon">
+                  <div class="social-icon-group-footer--circle">
+                    <svg class="social-icons-section__unit__icon">
                       <use href="./images/icons.svg#icon-linke"></use>
                     </svg>
                   </div>
@@ -283,9 +286,9 @@
               </div>
             </div>
 
-            <div class="join-us-margin">
+            <div class="footer__section__column">
               <div>
-                <span class="join-us">Zapisz się do newslettera</span>
+                <span class="heading__footer">Zapisz się do newslettera</span>
                 <div>
                   <label>
                     <textarea class="footer-textarea" placeholder="E-mail"></textarea>
@@ -294,13 +297,14 @@
               </div>
             </div>
             <div>
-              <div class="button-position">
-                <button type="submit" class="button-save">Zapisz się</button>
+              <div class="button-footer">
+                <button type="submit" class="button-footer--save">Zapisz się</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
   </body>
 </html>

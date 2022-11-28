@@ -165,7 +165,7 @@
       <!-- O U R  T E A M -->
       <!--  -->
       <section class="team">
-        <div class="team team--background">
+        <div class="team__background">
           <div class="team__container">
             <h2 class="team__heading">Nasz zespół</h2>
             <ul class="team__person">
@@ -330,6 +330,9 @@
           </div>
         </div>
       </section>
+      <!--  -->
+      <!-- C U S T O M E R S -->
+      <!--  -->
       <section class="customers">
         <div class="customers__container">
           <h2 class="customers__heading">Nasi klienci</h2>
@@ -461,58 +464,63 @@
         </div>
       </div>
     </footer>
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="border-close" data-modal-close>
-          <svg class="close">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-heading">Zostaw swoje dane w formularzu poniżej</p>
-        <form>
-          <label
-            >Imię<input class="border-style" type="text" name="username" />
-            <svg class="position-svg">
-              <use href="./images/icons.svg#icon-person" height="18px" width="18px"></use>
+    <div class="modal-window">
+      <div class="modal-window__backdrop is-hidden" data-modal>
+        <div class="modal-window__content">
+          <button type="button" class="modal-windows__button-close" data-modal-close>
+            <svg class="modal-windows__button-close__icon">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
-          </label>
-          <label
-            >Telefon<input class="border-style" type="tel" name="phone" />
-            <svg class="position-svg">
-              <use
-                href="./images/icons.svg#icon-phone-black"
-                height="18px"
-                width="18px"
-              ></use>
-            </svg>
-          </label>
-          <label
-            >Email<input class="border-style" type="email" name="mail" />
-            <svg class="position-svg">
-              <use
-                href="./images/icons.svg#icon-email-black"
-                height="18px"
-                width="18px"
-              ></use>
-            </svg>
-          </label>
-          <label
-            >Komentarz<textarea
-              class="modal-textarea"
-              placeholder="Wprowadź tekst"
-            ></textarea>
-          </label>
-          <label class="position-text-box">
-            <input class="check-box" type="checkbox" />
-
-            <div class="margin">
-              Oświadczam iż akceptuję <span class="inline">Regulamin</span> i
-              <span class="inline">Politykę Prywatności.</span>
-            </div>
-          </label>
-        </form>
-        <button type="submit" class="button-send">Wyślij</button>
+          </button>
+          <p class="modal-window__heading">Zostaw swoje dane w formularzu poniżej</p>
+          <form>
+            <label
+              >Imię<input class="modal-windows__input" type="text" name="username" />
+              <svg class="modal-window__input__icon">
+                <use
+                  href="./images/icons.svg#icon-person"
+                  height="18px"
+                  width="18px"
+                ></use>
+              </svg>
+            </label>
+            <label
+              >Telefon<input class="modal-windows__input" type="tel" name="phone" />
+              <svg class="modal-window__input__icon">
+                <use
+                  href="./images/icons.svg#icon-phone-black"
+                  height="18px"
+                  width="18px"
+                ></use>
+              </svg>
+            </label>
+            <label
+              >Email<input class="modal-windows__input" type="email" name="mail" />
+              <svg class="modal-window__input__icon">
+                <use
+                  href="./images/icons.svg#icon-email-black"
+                  height="18px"
+                  width="18px"
+                ></use>
+              </svg>
+            </label>
+            <label
+              >Komentarz<textarea
+                class="modal-windows__textarea"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <label>
+              <input class="check-box" type="checkbox" />
+              <div class="check-box__text">
+                Oświadczam iż akceptuję
+                <span class="check-box__text__distinction">Regulamin</span> i
+                <span class="check-box__text__distinction">Politykę Prywatności.</span>
+              </div>
+            </label>
+          </form>
+          <button type="submit" class="modal-window__button-send">Wyślij</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

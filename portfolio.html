@@ -18,46 +18,33 @@
     <!-- H E A D E R -->
     <!--  -->
     <header class="header">
-      <div class="header__container container">
-        <div class="header__menu">
+      <div class="header__container">
+        <div class="navbar">
           <a href="index.html" class="logo"><span class="logo--color">Web</span>Studio</a>
 
-          <nav class="header__menu">
-            <ul class="header__menu__container">
+          <nav class="navbar__container">
+            <ul class="navbar__menu">
               <li>
-                <a href="index.html" class="header__menu__item">Agencja </a>
+                <a href="index.html" class="link">Agencja </a>
               </li>
-              <li>
-                <a
-                  href="portfolio.html"
-                  class="header__menu__item header__menu__item--active header__menu__item--blue-bottom-agency"
-                  >Portfolio</a
-                >
-              </li>
-              <li><a href="/" class="header__menu__item">Kontakt</a></li>
+              <li><a href="portfolio.html" class="link active">Portfolio</a></li>
+              <li><a href="/" class="link">Kontakt</a></li>
             </ul>
           </nav>
         </div>
-
-        <nav class="header__menu">
-          <ul class="header__menu__container header__menu__container--gap">
+        <nav>
+          <ul class="navbar__contact">
             <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="header__menu__contact header__menu__contact--color"
-              >
-                <svg class="header__menu__contact__icon-email">
+              <a href="mailto:info@devstudio.com" class="link link--gray">
+                <svg class="link__icon-email">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 <span>info@devstudio.com</span>
               </a>
             </li>
             <li>
-              <a
-                href="tel:+48111111111"
-                class="header__menu__contact header__menu__contact--color header__menu__contact--padding"
-              >
-                <svg class="header__menu__contact__icon-phone">
+              <a href="tel:+48111111111" class="link link--gray">
+                <svg class="link__icon-phone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 <span>+48 111 111 111</span>
@@ -67,7 +54,6 @@
         </nav>
       </div>
     </header>
-
     <main>
       <!--  -->
       <!-- B U T T O N S  -->
@@ -223,12 +209,12 @@
     <!-- F O O T E R  -->
     <!--  -->
     <footer>
-      <div class="footer__container">
-        <div class="container">
-          <div class="footer__section">
+      <div class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
             <div>
-              <div>
-                <a href="index.html" class="logo logo--position-footer">
+              <div class="footer__logo">
+                <a href="index.html" class="footer__logo footer__logo--style">
                   <span class="logo--color">Web</span>
                   <span class="logo--color-footer">Studio</span>
                 </a>
@@ -255,30 +241,30 @@
               </address>
             </div>
 
-            <div class="footer__section__column">
+            <div class="footer__column">
               <div>
-                <span class="heading__footer">DOŁĄCZ DO NAS</span>
-                <div class="social-icon-group-footer">
-                  <div class="social-icon-group-footer--circle">
-                    <svg class="social-icons-section__unit__icon">
+                <span class="footer__heading">DOŁĄCZ DO NAS</span>
+                <div class="footer__social">
+                  <div class="footer__social__item">
+                    <svg class="footer__social__item__icon">
                       <use href="./images/icons.svg#icon-insta"></use>
                     </svg>
                   </div>
 
-                  <div class="social-icon-group-footer--circle">
-                    <svg class="social-icons-section__unit__icon">
+                  <div class="footer__social__item">
+                    <svg class="footer__social__item__icon">
                       <use href="./images/icons.svg#icon-tweet"></use>
                     </svg>
                   </div>
 
-                  <div class="social-icon-group-footer--circle">
-                    <svg class="social-icons-section__unit__icon">
+                  <div class="footer__social__item">
+                    <svg class="footer__social__item__icon">
                       <use href="./images/icons.svg#icon-face"></use>
                     </svg>
                   </div>
 
-                  <div class="social-icon-group-footer--circle">
-                    <svg class="social-icons-section__unit__icon">
+                  <div class="footer__social__item">
+                    <svg class="footer__social__item__icon">
                       <use href="./images/icons.svg#icon-linke"></use>
                     </svg>
                   </div>
@@ -286,25 +272,24 @@
               </div>
             </div>
 
-            <div class="footer__section__column">
+            <div class="footer__column">
               <div>
-                <span class="heading__footer">Zapisz się do newslettera</span>
+                <span class="footer__heading">Zapisz się do newslettera</span>
                 <div>
                   <label>
-                    <textarea class="footer-textarea" placeholder="E-mail"></textarea>
+                    <textarea class="footer__textarea" placeholder="E-mail"></textarea>
                   </label>
                 </div>
               </div>
             </div>
             <div>
-              <div class="button-footer">
-                <button type="submit" class="button-footer--save">Zapisz się</button>
+              <div class="footer__button">
+                <button type="submit" class="footer__button__icon">Zapisz się</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-
   </body>
 </html>

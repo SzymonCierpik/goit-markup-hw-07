@@ -69,16 +69,15 @@ ul {
   display: flex;
   height: 80px;
   align-items: center;
-  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  justify-content: space-between;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
+.navbar__menu {
+  display: inline-flex;
 }
 
 .logo {
@@ -96,14 +95,14 @@ ul {
   color: var(--blue);
 }
 
-.navbar__menu {
+.navbar__list {
   display: flex;
   list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  gap: 32px;
+  gap: 30px;
 }
 
 .link {
@@ -124,23 +123,12 @@ ul {
   display: block;
   width: 100%;
   height: 4px;
-  margin-top: 29px;
+  margin-top: 25px;
   background: var(--blue);
   border-radius: 2px;
   position: absolute;
   top: 100%;
   left: 0;
-}
-
-.navbar__contact {
-  gap: 16px;
-  display: flex;
-  list-style: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  gap: 30px;
 }
 
 .link--gray {
@@ -184,19 +172,15 @@ ul {
   background: var(--gray-second);
   text-align: center;
   height: 600px;
-}
-
-.slider__image {
   background-image: url('../images/img.png');
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
-  max-width: 1600px;
   margin: 0 auto;
   position: relative;
 }
 
-.slider__image::after {
+.slider::after {
   content: '';
   width: 100%;
   height: 600px;

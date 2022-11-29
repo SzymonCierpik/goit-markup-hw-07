@@ -11,6 +11,7 @@
   --slider-color: rgba(47, 48, 58, 0.4);
   --shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --animation: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  --social-background: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -59,7 +60,7 @@ ul {
           padding-inline-start: 0;
 }
 
-.article__unit,
+.article__item,
 .offer_item,
 .team__list,
 .address,
@@ -104,6 +105,15 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.navbar__container--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar__menu {
@@ -447,19 +457,18 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  fill: #afb1b8;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  gap: 10px;
   background-color: var(--white);
 }
 
 .social__icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  fill: #afb1b8;
+  border-radius: 50%;
 }
 
-.social__container:hover {
+.social__icon:hover {
   background-color: var(--blue);
   cursor: pointer;
   fill: var(--white);
@@ -500,15 +509,15 @@ ul {
   padding-top: 94px;
 }
 
-.customers__unit {
+.customers__icon {
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.customers__unit:hover,
-.customers__unit:focus {
+.customers__icon:hover,
+.customers__icon:focus {
   fill: var(--blue);
   border-color: var(--blue);
   -webkit-transition: var(--animation);
@@ -527,18 +536,15 @@ ul {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-}
-
-.logo--color-footer {
-  color: var(--white);
-}
-
-.footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 60px;
   gap: 70px;
+}
+
+.logo--color-footer {
+  color: var(--white);
 }
 
 .footer__logo--style {
@@ -613,6 +619,14 @@ ul {
   margin-top: 20px;
 }
 
+.social__icon-footer {
+  width: 40px;
+  height: 40px;
+  fill: #afb1b8;
+  border-radius: 50%;
+  background-color: var(--social-background);
+}
+
 .footer__social__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,17 +644,12 @@ ul {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer__social__item:hover {
+.social__icon-footer:hover {
   fill: var(--white);
   background: var(--blue);
   -webkit-transition: var(--animation);
   transition: var(--animation);
   cursor: pointer;
-}
-
-.social__icon {
-  width: 20px;
-  height: 20px;
 }
 
 .footer__textarea {

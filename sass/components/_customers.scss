@@ -17,15 +17,15 @@
   padding-top: 94px;
 }
 
-.customers__unit {
+.customers__icon {
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.customers__unit:hover,
-.customers__unit:focus {
+.customers__icon:hover,
+.customers__icon:focus {
   fill: var(--blue);
   border-color: var(--blue);
   transition: var(--animation);

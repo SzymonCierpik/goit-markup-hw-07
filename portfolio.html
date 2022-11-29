@@ -20,18 +20,21 @@
     <header class="header">
       <div class="header__container">
         <div class="navbar">
-          <a href="index.html" class="logo"><span class="logo--color">Web</span>Studio</a>
           <div class="navbar__container">
-            <nav class="navbar__menu">
-              <ul class="navbar__list">
-                <li>
-                  <a href="index.html" class="link">Agencja </a>
-                </li>
-                <li><a href="portfolio.html" class="link active">Portfolio</a></li>
-                <li><a href="/" class="link">Kontakt</a></li>
-              </ul>
-            </nav>
-
+            <div class="navbar__container--left">
+              <a href="index.html" class="logo">
+                <span class="logo--color">Web</span>Studio</a
+              >
+              <nav class="navbar__menu">
+                <ul class="navbar__list">
+                  <li>
+                    <a href="index.html" class="link">Agencja </a>
+                  </li>
+                  <li><a href="portfolio.html" class="link active">Portfolio</a></li>
+                  <li><a href="/" class="link">Kontakt</a></li>
+                </ul>
+              </nav>
+            </div>
             <div class="navbar__menu">
               <ul class="navbar__list">
                 <li>
@@ -229,81 +232,102 @@
     <footer>
       <div class="footer">
         <div class="footer__container">
-          <div class="footer__body">
+          <div>
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo footer__logo--style">
+                <span class="logo--color">Web</span>
+                <span class="logo--color-footer">Studio</span>
+              </a>
+            </div>
+            <address>
+              <ul class="address">
+                <li class="address__item address__item--primary-color">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li class="address__item">
+                  <a
+                    href="mailto:nfo@devstudio.com"
+                    class="address__item--secondary-color"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+48111111111" class="address__item--secondary-color"
+                    >+48 111 111 111
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__column">
             <div>
-              <div class="footer__logo">
-                <a href="index.html" class="footer__logo footer__logo--style">
-                  <span class="logo--color">Web</span>
-                  <span class="logo--color-footer">Studio</span>
-                </a>
-              </div>
-              <address>
-                <ul class="address">
-                  <li class="address__item address__item--primary-color">
-                    m. Warszawa, Aleje Jerozolimskie 21
-                  </li>
-                  <li class="address__item">
-                    <a
-                      href="mailto:nfo@devstudio.com"
-                      class="address__item--secondary-color"
-                    >
-                      info@devstudio.com
-                    </a>
-                  </li>
-                  <li class="address__item">
-                    <a href="tel:+48111111111" class="address__item--secondary-color"
-                      >+48 111 111 111
-                    </a>
-                  </li>
-                </ul>
-              </address>
-            </div>
-
-            <div class="footer__column">
-              <div>
-                <span class="footer__heading">DOŁĄCZ DO NAS</span>
-                <div class="footer__social">
-                  <div class="footer__social__item">
-                    <svg class="footer__social__icon">
-                      <use href="./images/icons.svg#icon-insta"></use>
-                    </svg>
-                  </div>
-
-                  <div class="footer__social__item">
-                    <svg class="footer__social__icon">
-                      <use href="./images/icons.svg#icon-tweet"></use>
-                    </svg>
-                  </div>
-
-                  <div class="footer__social__item">
-                    <svg class="footer__social__icon">
-                      <use href="./images/icons.svg#icon-face"></use>
-                    </svg>
-                  </div>
-
-                  <div class="footer__social__item">
-                    <svg class="footer__social__icon">
-                      <use href="./images/icons.svg#icon-linke"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="footer__column">
-              <div>
-                <span class="footer__heading">Zapisz się do newslettera</span>
+              <span class="footer__heading">DOŁĄCZ DO NAS</span>
+              <div class="footer__social">
                 <div>
-                  <label>
-                    <textarea class="footer__textarea" placeholder="E-mail"></textarea>
-                  </label>
+                  <svg class="social__icon-footer">
+                    <use
+                      href="./images/icons.svg#icon-insta"
+                      width="20"
+                      height="20"
+                      x="10"
+                      y="10"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <svg class="social__icon-footer">
+                    <use
+                      href="./images/icons.svg#icon-tweet"
+                      width="20"
+                      height="20"
+                      x="10"
+                      y="10"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <svg class="social__icon-footer">
+                    <use
+                      href="./images/icons.svg#icon-face"
+                      width="20"
+                      height="20"
+                      x="10"
+                      y="10"
+                    ></use>
+                  </svg>
+                </div>
+                <div>
+                  <svg class="social__icon-footer">
+                    <use
+                      href="./images/icons.svg#icon-linke"
+                      width="20"
+                      height="20"
+                      x="10"
+                      y="10"
+                    ></use>
+                  </svg>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="footer__column">
             <div>
-              <div class="footer__button">
-                <button type="submit" class="footer__button__icon">Zapisz się</button>
+              <span class="footer__heading">Zapisz się do newslettera</span>
+              <div>
+                <label>
+                  <textarea class="footer__textarea" placeholder="E-mail"></textarea>
+                </label>
               </div>
+            </div>
+          </div>
+          <div>
+            <div class="footer__button">
+              <button type="submit" class="footer__button__icon">Zapisz się</button>
             </div>
           </div>
         </div>

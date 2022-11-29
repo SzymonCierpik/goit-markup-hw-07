@@ -1,6 +1,6 @@
 /* <!-- O U R  T E A M --><!-- O U R  T E A M --><!-- O U R  T E A M --><!-- O U R  T E A M --> */
 
-.team__background {
+.team {
   background: var(--button-color);
 }
 
@@ -21,14 +21,14 @@
   padding-top: 94px;
 }
 
-.team__person {
+.team__list {
   gap: 30px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
 }
 
-.team__person__frame {
+.team__frame {
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-.team__person__name {
+.team__caption {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -44,13 +44,13 @@
   color: var(--black-second);
 }
 
-.team__person__specialization {
+.team__spec {
   color: var(--gray);
   font-weight: 400;
   margin-bottom: 16px;
 }
 
-.team__person__social {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
   margin-bottom: 30px;
 }
 
-.team__person__social__unit {
+.social__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,12 +69,12 @@
   background-color: var(--white);
 }
 
-.team__person__social__icon {
+.social__icon {
   width: 20px;
   height: 20px;
 }
 
-.team__person__social__unit:hover {
+.social__container:hover {
   background-color: var(--blue);
   cursor: pointer;
   fill: var(--white);

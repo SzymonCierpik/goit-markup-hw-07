@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--gray);
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+.article__unit,
+.offer__image,
+.team__person,
+.address,
+.button__unit,
+.products__picture {
+  list-style: none;
+}

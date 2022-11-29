@@ -1,0 +1,203 @@
+/* <!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --> */
+
+.modal-window__backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: var(--animation);
+  z-index: 2;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: var(--animation);
+}
+
+.modal-window__content {
+  position: absolute;
+  z-index: 0;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: var(--white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-windows__button-close {
+  margin-left: 490px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-windows__button-close__icon {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.modal-windows__button-close:hover,
+.modal-windows__button-close:focus {
+  fill: var(--blue);
+  transition: var(--animation);
+}
+
+.modal-window__heading {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black-second);
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.modal-windows__input {
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+form {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+label:focus-within svg {
+  fill: var(--blue);
+}
+
+input {
+  position: relative;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid var(--blackho);
+  padding-left: 42px;
+}
+
+.modal-window__input__icon {
+  position: absolute;
+  display: flex;
+  top: 40px;
+  left: 15px;
+}
+
+input:focus,
+textarea:focus {
+  transition: var(--animation);
+  border-color: var(--blue);
+  outline: none;
+}
+
+.modal-windows__textarea {
+  padding-left: 15px;
+  padding-top: 12px;
+  position: relative;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.modal-windows__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.check-box__text__distinction:hover {
+  display: inline-block;
+  text-decoration: underline;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+input:checked::before {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.margin {
+  margin-top: 10px;
+  margin-left: 39px;
+}
+
+.modal-window__button-send {
+  width: 200px;
+  height: 50px;
+  color: var(--white);
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background: var(--blue);
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 164px;
+  margin-right: 164px;
+}
+
+.check-box__text {
+  margin-top: 10px;
+  margin-left: 39px;
+}
+.check-box {
+  display: flex;
+  position: absolute;
+  height: 10px;
+  width: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.check-box::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 1px;
+  background-color: var(--white);
+}

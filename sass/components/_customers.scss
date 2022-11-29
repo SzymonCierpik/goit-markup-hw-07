@@ -1,0 +1,33 @@
+/* <!-- C U S T O M E R S --><!-- C U S T O M E R S --><!-- C U S T O M E R S --><!-- C U S T O M E R S --> */
+
+.customers__container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.customers__heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--black-second);
+  text-align: center;
+  padding-top: 94px;
+}
+
+.customers__unit {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers__unit:hover,
+.customers__unit:focus {
+  fill: var(--blue);
+  border-color: var(--blue);
+  transition: var(--animation);
+  cursor: pointer;
+}

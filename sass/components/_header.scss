@@ -7,19 +7,20 @@
 .header__container {
   display: flex;
   height: 80px;
-  align-items: center;
-  width: 1200px;
   margin: 0 auto;
-  position: relative;
+  justify-content: center;
   z-index: 1;
-  justify-content: space-between;
 }
 
+.navbar {
+  display: flex;
+}
 .navbar__container {
   display: flex;
   height: 80px;
   align-items: center;
   width: 1200px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -28,7 +29,8 @@
 }
 
 .logo {
-  position: relative;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-family: 'Raleway';
   font-size: 26px;

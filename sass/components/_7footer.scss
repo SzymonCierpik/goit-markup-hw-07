@@ -47,12 +47,10 @@
   color: var(--gray-footer);
   font-style: normal;
   padding-top: 9px;
-}
-
-.address__item--primary-color {
   color: var(--white);
 }
-.address__item--secondary-color {
+
+.footer--color {
   text-decoration: none;
   color: var(--gray-footer);
   font-style: normal;
@@ -142,7 +140,7 @@
   margin-left: -60px;
 }
 
-.footer__button__icon {
+.button-icon {
   background: var(--blue);
   box-shadow: var(--shadow);
   border-radius: 4px;

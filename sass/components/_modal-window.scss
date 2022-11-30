@@ -1,6 +1,6 @@
 /* <!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --> */
 
-.modal-window__backdrop {
+.backdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -32,7 +32,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-windows__button-close {
+.button-close {
   margin-left: 490px;
   margin-top: 8px;
   width: 30px;
@@ -52,8 +52,8 @@
   cursor: pointer;
 }
 
-.modal-windows__button-close:hover,
-.modal-windows__button-close:focus {
+.button-close:hover,
+.button-close:focus {
   fill: var(--blue);
   transition: var(--animation);
 }
@@ -70,7 +70,7 @@
   margin-bottom: 12px;
 }
 
-.modal-windows__input {
+.input {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -108,7 +108,7 @@ input {
   padding-left: 42px;
 }
 
-.modal-window__input__icon {
+.input__icon {
   position: absolute;
   display: flex;
   top: 40px;
@@ -137,7 +137,7 @@ textarea:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.check-box__text__distinction:hover {
+.modal-windows__text:hover {
   display: inline-block;
   text-decoration: underline;
   color: var(--blue);
@@ -176,6 +176,15 @@ input:checked::before {
   margin-top: 30px;
   margin-left: 164px;
   margin-right: 164px;
+}
+
+.modal-window__button-send:hover,
+.modal-window__button-send:focus {
+  background: var(--button-color);
+  color: var(--blue);
+  border-color: var(--blue);
+  border: double;
+  transition: var(--animation);
 }
 
 .check-box__text {

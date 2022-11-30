@@ -19,39 +19,39 @@
   border: none;
 }
 
-.button__unit__all {
+.button__first {
   width: 121px;
   height: 38px;
 }
 
-.button__unit__sites {
+.button__second {
   width: 93px;
   height: 38px;
 }
 
-.button__unit__apps {
+.button__third {
   width: 114px;
   height: 38px;
 }
 
-.button__unit-design {
+.button__fourth {
   width: 91px;
   height: 38px;
 }
-.button__unit-marketing {
+.button__fifth {
   width: 121px;
   height: 38px;
 }
-.button__unit__all:hover,
-.button__unit__all:focus,
-.button__unit__sites:hover,
-.button__unit__sites:focus,
-.button__unit__apps:hover,
-.button__unit__apps:focus,
-.button__unit-design:hover,
-.button__unit-design:focus,
-.button__unit-marketing:hover,
-.button__unit-marketing:focus {
+.button__first:hover,
+.button__first:focus,
+.button__second:hover,
+.button__second:focus,
+.button__third:hover,
+.button__third:focus,
+.button__fourth:hover,
+.button__fourth:focus,
+.button__fifth:hover,
+.button__fifth:focus {
   background-color: var(--blue);
   color: var(--white);
   cursor: pointer;

@@ -35,7 +35,7 @@
   overflow: hidden;
 }
 
-.products__picture__slider {
+.products__slider {
   width: 100%;
   height: 100%;
   transform: translatey(100%);
@@ -64,7 +64,7 @@
   color: var(--gray);
 }
 
-.products__picture__slider {
+.products__slider {
   color: var(--white);
   padding-left: 24px;
   padding-top: 49px;
@@ -78,7 +78,7 @@
   text-align: left;
 }
 
-.picture__box:hover .products__picture__slider {
+.picture__box:hover .products__slider {
   transform: translate(0);
 }
 
@@ -109,10 +109,10 @@
   background-image: url('../images/portfolio_img6.jpg');
 }
 
-.img-seven-eight {
+.img-eight {
   background-image: url('../images/portfolio_img7.jpg');
 }
 
-.img-seven-nine {
+.img-nine {
   background-image: url('../images/portfolio_img8.jpg');
 }

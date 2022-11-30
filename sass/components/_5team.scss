@@ -2,52 +2,52 @@
 
 .team {
   background: var(--button-color);
-}
 
-.team__container {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
 
-.team__heading {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--black-second);
-  text-align: center;
-  padding-top: 94px;
-}
+  &__heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--black-second);
+    text-align: center;
+    padding-top: 94px;
+  }
 
-.team__list {
-  gap: 30px;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 94px;
-}
+  &__list {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+  }
 
-.team__frame {
-  background: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
-}
+  &__card {
+    background: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+  }
 
-.team__caption {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--black-second);
-}
+  &__caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--black-second);
+  }
 
-.team__spec {
-  color: var(--gray);
-  font-weight: 400;
-  margin-bottom: 16px;
+  &__spec {
+    color: var(--gray);
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
 }
 
 .social {
@@ -56,36 +56,27 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--white);
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: #afb1b8;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: var(--blue);
+      cursor: pointer;
+      fill: var(--white);
+      transition: var(--animation);
+    }
+  }
 }
 
-.social__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10px;
-  background-color: var(--white);
-}
-
-.social__icon {
-  width: 40px;
-  height: 40px;
-  fill: #afb1b8;
-  border-radius: 50%;
-}
-
-.social__icon:hover {
-  background-color: var(--blue);
-  cursor: pointer;
-  fill: var(--white);
-  transition: var(--animation);
-}
-
-.customers__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  fill: #afb1b8;
-  gap: 30px;
-  margin-bottom: 94px;
-}

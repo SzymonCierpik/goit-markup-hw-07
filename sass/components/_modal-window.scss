@@ -1,5 +1,52 @@
 /* <!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --><!-- M O D A L  W I N D O W  --> */
 
+form {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  &:focus-within svg {
+    fill: var(--blue);
+  }
+}
+input {
+  position: relative;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid var(--blackho);
+  padding-left: 42px;
+
+  &:focus {
+    transition: var(--animation);
+    border-color: var(--blue);
+    outline: none;
+  }
+
+  &:checked::before {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -18,7 +65,7 @@
   transition: var(--animation);
 }
 
-.modal-window__content {
+.modal__content {
   position: absolute;
   z-index: 0;
   width: 528px;
@@ -32,7 +79,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.button-close {
+.modal__button-close {
   margin-left: 490px;
   margin-top: 8px;
   width: 30px;
@@ -45,20 +92,20 @@
   justify-content: center;
 }
 
-.modal-windows__button-close__icon {
+.modal__button-close-icon {
   position: absolute;
   height: 18px;
   width: 18px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--blue);
+    transition: var(--animation);
+  }
 }
 
-.button-close:hover,
-.button-close:focus {
-  fill: var(--blue);
-  transition: var(--animation);
-}
-
-.modal-window__heading {
+.modal__heading {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
@@ -70,59 +117,19 @@
   margin-bottom: 12px;
 }
 
-.input {
+.modal__input {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-form {
-  position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-label {
-  position: relative;
-  display: block;
-  padding-top: 10px;
-  font-family: 'Roboto';
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
-
-label:focus-within svg {
-  fill: var(--blue);
-}
-
-input {
-  position: relative;
-  width: 448px;
-  height: 40px;
-  border-radius: 4px;
-  background: none;
-  border-radius: 4px;
-  border: 1px solid var(--blackho);
-  padding-left: 42px;
-}
-
-.input__icon {
+.modal__input-icon {
   position: absolute;
   display: flex;
   top: 40px;
   left: 15px;
 }
 
-input:focus,
-textarea:focus {
-  transition: var(--animation);
-  border-color: var(--blue);
-  outline: none;
-}
-
-.modal-windows__textarea {
+.modal__textarea {
   padding-left: 15px;
   padding-top: 12px;
   position: relative;
@@ -131,26 +138,24 @@ textarea:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-}
-
-.modal-windows__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    transition: var(--animation);
+    border-color: var(--blue);
+    outline: none;
+  }
 }
 
-.modal-windows__text:hover {
+.modal__bottom-text--link:hover {
   display: inline-block;
   text-decoration: underline;
   color: var(--blue);
   cursor: pointer;
-}
-
-input:checked::before {
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
 }
 
 .margin {
@@ -158,7 +163,7 @@ input:checked::before {
   margin-left: 39px;
 }
 
-.modal-window__button-send {
+.modal__button-send {
   width: 200px;
   height: 50px;
   color: var(--white);
@@ -176,37 +181,38 @@ input:checked::before {
   margin-top: 30px;
   margin-left: 164px;
   margin-right: 164px;
+
+  &:hover,
+  &:focus {
+    background: var(--button-color);
+    color: var(--blue);
+    border-color: var(--blue);
+    border: double;
+    transition: var(--animation);
+  }
 }
 
-.modal-window__button-send:hover,
-.modal-window__button-send:focus {
-  background: var(--button-color);
-  color: var(--blue);
-  border-color: var(--blue);
-  border: double;
-  transition: var(--animation);
-}
-
-.check-box__text {
+.modal__bottom-text {
   margin-top: 10px;
   margin-left: 39px;
 }
-.check-box {
+
+.modal__check-box {
   display: flex;
   position: absolute;
   height: 10px;
   width: 15px;
   margin-top: 10px;
   margin-left: 15px;
-}
 
-.check-box::before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 15px;
-  height: 15px;
-  border: 1px solid black;
-  border-radius: 1px;
-  background-color: var(--white);
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: var(--white);
+  }
 }

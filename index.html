@@ -146,15 +146,15 @@
         <div class="offer__container">
           <h2 class="offer__heading">Czym się zajmujemy</h2>
           <ul class="offer__list">
-            <li class="offer_item">
+            <li class="offer__item">
               <img src="./images/img2.jpg" width="370" height="294" alt="computer" />
               <figcaption class="offer__content">Aplikacje komputerowe</figcaption>
             </li>
-            <li class="offer_item">
+            <li class="offer__item">
               <img src="./images/img1.jpg" width="370" height="294" alt="phone" />
               <figcaption class="offer__content">Aplikacje mobilne</figcaption>
             </li>
-            <li class="offer_item">
+            <li class="offer__item">
               <img src="./images/img3.jpg" width="370" height="294" alt="tablet" />
               <figcaption class="offer__content">Rozwiązania graficzne</figcaption>
             </li>
@@ -168,7 +168,7 @@
         <div class="team__container">
           <h2 class="team__heading">Nasz zespół</h2>
           <ul class="team__list">
-            <li class="team__frame">
+            <li class="team__card">
               <figure>
                 <img
                   src="./images/person1.jpg"
@@ -233,7 +233,7 @@
                 </div>
               </div>
             </li>
-            <li class="team__frame">
+            <li class="team__card">
               <figure>
                 <img
                   src="./images/person2.jpg"
@@ -297,7 +297,7 @@
                 </div>
               </div>
             </li>
-            <li class="team__frame">
+            <li class="team__card">
               <figure>
                 <img
                   src="./images/person3.jpg"
@@ -361,7 +361,7 @@
                 </div>
               </div>
             </li>
-            <li class="team__frame">
+            <li class="team__card">
               <figure>
                 <img
                   src="./images/person4.jpg"
@@ -492,16 +492,16 @@
                 <li class="address__item">
                   m. Warszawa, Aleje Jerozolimskie 21
                 </li>
-                <li class="address__item footer--color">
+                <li class="address__item">
                   <a
                     href="mailto:nfo@devstudio.com"
-                    class="footer--color"
+                    class="address__item--color"
                   >
                     info@devstudio.com
                   </a>
                 </li>
                 <li class="address__item">
-                  <a href="tel:+48111111111" class="footer--color"
+                  <a href="tel:+48111111111" class="address__item--color"
                     >+48 111 111 111
                   </a>
                 </li>
@@ -514,7 +514,7 @@
               <span class="footer__heading">DOŁĄCZ DO NAS</span>
               <div class="footer__social">
                 <div>
-                  <svg class="social__icon-footer">
+                  <svg class="footer__social-icon">
                     <use
                       href="./images/icons.svg#icon-insta"
                       width="20"
@@ -526,7 +526,7 @@
                 </div>
 
                 <div>
-                  <svg class="social__icon-footer">
+                  <svg class="footer__social-icon">
                     <use
                       href="./images/icons.svg#icon-tweet"
                       width="20"
@@ -538,7 +538,7 @@
                 </div>
 
                 <div>
-                  <svg class="social__icon-footer">
+                  <svg class="footer__social-icon">
                     <use
                       href="./images/icons.svg#icon-face"
                       width="20"
@@ -549,7 +549,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg class="social__icon-footer">
+                  <svg class="footer__social-icon">
                     <use
                       href="./images/icons.svg#icon-linke"
                       width="20"
@@ -575,25 +575,25 @@
           </div>
           <div>
             <div class="footer__button">
-              <button type="submit" class="button-icon">Zapisz się</button>
+              <button type="submit" class="footer__button-icon">Zapisz się</button>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <div class="modal-window">
+    <div class="modal">
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal-window__content">
-          <button type="button" class="button-close" data-modal-close>
-            <svg class="modal-windows__button-close__icon">
+        <div class="modal__content">
+          <button type="button" class="modal__button-close" data-modal-close>
+            <svg class="modal__button-close-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <p class="modal-window__heading">Zostaw swoje dane w formularzu poniżej</p>
+          <p class="modal__heading">Zostaw swoje dane w formularzu poniżej</p>
           <form>
             <label
-              >Imię<input class="input" type="text" name="username" />
-              <svg class="input__icon">
+              >Imię<input class="modal__input" type="text" name="username" />
+              <svg class="modal__input-icon">
                 <use
                   href="./images/icons.svg#icon-person"
                   height="18px"
@@ -602,8 +602,8 @@
               </svg>
             </label>
             <label
-              >Telefon<input class="input" type="tel" name="phone" />
-              <svg class="input__icon">
+              >Telefon<input class="modal__input" type="tel" name="phone" />
+              <svg class="modal__input-icon">
                 <use
                   href="./images/icons.svg#icon-phone-black"
                   height="18px"
@@ -612,8 +612,8 @@
               </svg>
             </label>
             <label
-              >Email<input class="input" type="email" name="mail" />
-              <svg class="input__icon">
+              >Email<input class="modal__input" type="email" name="mail" />
+              <svg class="modal__input-icon">
                 <use
                   href="./images/icons.svg#icon-email-black"
                   height="18px"
@@ -623,20 +623,20 @@
             </label>
             <label
               >Komentarz<textarea
-                class="modal-windows__textarea"
+                class="modal__textarea"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
             <label>
-              <input class="check-box" type="checkbox" />
-              <div class="check-box__text">
+              <input class="modal__check-box" type="checkbox" />
+              <div class="modal__bottom-text">
                 Oświadczam iż akceptuję
-                <span class="modal-windows__text">Regulamin</span> i
-                <span class="modal-windows__text">Politykę Prywatności.</span>
+                <span class="modal__bottom-text--link">Regulamin</span> i
+                <span class="modal__bottom-text--link">Politykę Prywatności.</span>
               </div>
             </label>
           </form>
-          <button type="submit" class="modal-window__button-send">Wyślij</button>
+          <button type="submit" class="modal__button-send">Wyślij</button>
         </div>
       </div>
     </div>

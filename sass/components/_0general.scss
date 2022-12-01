@@ -43,3 +43,21 @@ ul {
 .products__picture {
   list-style: none;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.button-theme {
+  background: var(--blue);
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+}

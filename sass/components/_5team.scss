@@ -4,8 +4,7 @@
   background: var(--button-color);
 
   &__container {
-    width: 1200px;
-    margin: 0 auto;
+    @extend .container;
     position: relative;
     z-index: 1;
   }
@@ -79,4 +78,3 @@
     }
   }
 }
-

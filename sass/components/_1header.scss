@@ -16,12 +16,11 @@
   display: flex;
 
   &__container {
+    @extend .container;
     display: flex;
     height: 80px;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__container--left {
@@ -41,23 +40,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     gap: 30px;
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-family: 'Raleway';
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--black);
-  padding-right: 47px;
-
-  &--color {
-    color: var(--blue);
   }
 }
 

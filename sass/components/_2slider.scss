@@ -12,8 +12,7 @@
   position: relative;
 
   &__container {
-    width: 1200px;
-    margin: 0 auto;
+    @extend .container;
     position: relative;
     z-index: 1;
   }
@@ -28,29 +27,18 @@
     padding-bottom: 30px;
   }
   &__button {
-    background: var(--blue);
-    box-shadow: var(--shadow);
-    border-radius: 4px;
-    cursor: pointer;
-    height: 50px;
-    width: 200px;
+    @extend .button-theme;
     left: 700px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.86;
-    letter-spacing: 0.06em;
     color: var(--white);
 
     &:focus,
     &:hover {
-      background: var(--button-color);
-      color: var(--blue);
+      color: var(--black);
       border-color: var(--blue);
-      border: double;
       transition: var(--animation);
     }
   }
-  
+
   &::after {
     content: '';
     width: 100%;

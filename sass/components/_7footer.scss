@@ -1,7 +1,7 @@
 /* <!-- F O O T E R  --><!-- F O O T E R  --><!-- F O O T E R  --><!-- F O O T E R  --> */
 
 .footer {
-  background-color: var(--gray-second);
+  background-color: $gray-second;
   height: 252px;
 
   &__container {
@@ -20,7 +20,7 @@
     line-height: 1.19;
     font-weight: 700;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: $black;
     padding-right: 47px;
     display: flex;
   }
@@ -37,7 +37,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white);
+    color: $white;
   }
 
   &__social {
@@ -49,14 +49,14 @@
   &__social-icon {
     width: 40px;
     height: 40px;
-    fill: #afb1b8;
+    fill: $white;
     border-radius: 50%;
-    background-color: var(--social-background);
+    background-color: $social-background;
 
     &:hover {
-      fill: var(--white);
-      background: var(--blue);
-      transition: var(--animation);
+      fill: $white;
+      background: $blue;
+      transition: $animation;
       cursor: pointer;
     }
   }
@@ -67,12 +67,12 @@
     padding-top: 16px;
     width: 358px;
     height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(var(--shadow));
+    border: 1px solid $gray-footer;
+    filter: drop-shadow($shadow);
     border-radius: 4px;
     resize: none;
-    background: var(--gray-second);
-    color: var(--gray-footer);
+    background: $gray-second;
+    color: $gray-footer;
     font-size: 16px;
 
     &::placeholder {
@@ -82,7 +82,7 @@
       font-size: 16px;
       line-height: 20px;
       letter-spacing: 0.03em;
-      color: var(--gray-footer);
+      color: $gray-footer;
     }
   }
 
@@ -93,8 +93,8 @@
 
   &__button-icon {
     @extend .button-theme;
-    color: var(--button-color);
-    border-color: var(--blue);
+    color: $button-color;
+    border-color: $blue;
     line-height: 30px;
     text-align: left;
     padding-left: 42px;
@@ -104,9 +104,9 @@
     background-position-y: 12px;
     &:focus,
     &:hover {
-      color: var(--black);
-      border-color: var(--blue);
-      transition: var(--animation);
+      color: $black;
+      border-color: $blue;
+      transition: $animation;
     }
   }
 }
@@ -119,24 +119,24 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--gray-footer);
+    color: $gray-footer;
     font-style: normal;
     padding-top: 9px;
-    color: var(--white);
+    color: $white;
   }
 
   &__item--color {
     text-decoration: none;
-    color: var(--gray-footer);
+    color: $gray-footer;
     font-style: normal;
 
     &:hover,
     &:focus {
-      color: var(--white);
+      color: $white;
     }
   }
 }
 
 .logo--color-footer {
-  color: var(--white);
+  color: $white;
 }

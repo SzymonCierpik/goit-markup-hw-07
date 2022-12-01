@@ -1,7 +1,7 @@
 /* <!-- E F F E C T I V E  S O L U T I O N S --><!-- E F F E C T I V E  S O L U T I O N S --><!-- E F F E C T I V E  S O L U T I O N S --><!-- E F F E C T I V E  S O L U T I O N S --> */
 
 .slider {
-  background: var(--gray-second);
+  background: $gray-second;
   text-align: center;
   height: 600px;
   background-image: url('../images/img.png');
@@ -21,7 +21,7 @@
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: var(--white);
+    color: $white;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 30px;
@@ -29,13 +29,13 @@
   &__button {
     @extend .button-theme;
     left: 700px;
-    color: var(--white);
+    color: $white;
 
     &:focus,
     &:hover {
-      color: var(--black);
-      border-color: var(--blue);
-      transition: var(--animation);
+      color: $black;
+      border-color: $blue;
+      transition: $animation;
     }
   }
 
@@ -43,7 +43,7 @@
     content: '';
     width: 100%;
     height: 600px;
-    background: var(--slider-color);
+    background: $slider-color;
     display: flex;
     position: absolute;
     top: 0;

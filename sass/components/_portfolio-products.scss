@@ -1,118 +1,88 @@
 /* <!-- P I C T U R E S  --> <!-- P I C T U R E S  --> <!-- P I C T U R E S  --> <!-- P I C T U R E S  --> */
-
-.products__container {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-.products__list {
-  margin-top: 50px;
-  margin-bottom: 94px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.products__picture {
+.products {
   background: var(--white);
-  border: 1px solid var(--white-second);
-  position: relative;
+
+  &__container {
+    @extend .container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__list {
+    margin-top: 50px;
+    margin-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__picture {
+    background: var(--white);
+    border: 1px solid var(--white-second);
+    position: relative;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__box {
+    background-size: contain;
+    width: 370px;
+    height: 294px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  &__slider {
+    width: 100%;
+    height: 100%;
+    transform: translatey(100%);
+    transition: var(--animation);
+    background: rgba(33, 150, 243, 0.9);
+    color: var(--white);
+    padding-left: 24px;
+    padding-top: 49px;
+    padding-right: 46px;
+    padding-bottom: 49px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+
+  &__heading {
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-second);
+  }
+
+  &__summary {
+    padding-left: 24px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--gray);
+  }
+  &__box:hover &__slider {
+    transform: translate(0);
+  }
 }
 
-.products__picture:hover,
-.products__picture:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.picture__box {
-  background-size: contain;
-  width: 370px;
-  height: 294px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
-
-.products__slider {
-  width: 100%;
-  height: 100%;
-  transform: translatey(100%);
-  transition: var(--animation);
-  background: rgba(33, 150, 243, 0.9);
-}
-
-.products__heading {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--black-second);
-}
-
-.products__summary {
-  padding-left: 24px;
-  padding-bottom: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--gray);
-}
-
-.products__slider {
-  color: var(--white);
-  padding-left: 24px;
-  padding-top: 49px;
-  padding-right: 46px;
-  padding-bottom: 49px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
-.picture__box:hover .products__slider {
-  transform: translate(0);
-}
-
-.img-one {
-  background-image: url('../images/portfolio_img9.jpg');
-}
-.img-two {
-  background-image: url('../images/portfolio_img1.jpg');
-}
-
-.img-three {
-  background-image: url('../images/portfolio_img2.jpg');
-}
-
-.img-four {
-  background-image: url('../images/portfolio_img3.jpg');
-}
-
-.img-five {
-  background-image: url('../images/portfolio_img4.jpg');
-}
-
-.img-six {
-  background-image: url('../images/portfolio_img5.jpg');
-}
-
-.img-seven {
-  background-image: url('../images/portfolio_img6.jpg');
-}
-
-.img-eight {
-  background-image: url('../images/portfolio_img7.jpg');
-}
-
-.img-nine {
-  background-image: url('../images/portfolio_img8.jpg');
+@each $pict in one, two, three, four, five, six, seven, eight, nine {
+  .img-#{$pict} {
+    background-image: url('../images/img-#{$pict}.jpg');
+  }
 }
